@@ -28,7 +28,7 @@ public class Interactor : MonoBehaviour {
                 InteractTextUI.instance.SetText(interHit.HoverText());
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    interHit.Interact(this.gameObject);
+                    interHit.Interact(this.transform.parent.gameObject);
 					
                 }
             }else{
