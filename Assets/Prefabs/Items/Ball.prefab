@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4833458766475762}
   - component: {fileID: 114833021686375520}
+  - component: {fileID: 135257060984758412}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -37,7 +38,6 @@ GameObject:
   - component: {fileID: 4246113860891508}
   - component: {fileID: 33316609663407406}
   - component: {fileID: 23348913837343838}
-  - component: {fileID: 135413986694101330}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -65,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056474868734240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.718, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4246113860891508}
@@ -126,12 +126,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactText: Pick Up Ball
---- !u!135 &135413986694101330
+--- !u!135 &135257060984758412
 SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1075320312164026}
+  m_GameObject: {fileID: 1056474868734240}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
