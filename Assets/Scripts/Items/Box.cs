@@ -7,6 +7,6 @@ public class Box : InteractObject
 
     public override void Interact(GameObject player)
     {
-       Debug.Log("Box clicked") ;
+       GetComponent<Animator>().SetTrigger("Push");
     }
 }
