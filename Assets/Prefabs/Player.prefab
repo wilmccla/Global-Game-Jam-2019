@@ -176,7 +176,6 @@ GameObject:
   - component: {fileID: 54196985747714146}
   - component: {fileID: 135099976450043068}
   - component: {fileID: 114992146292844080}
-  - component: {fileID: 114525593027296040}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -421,7 +420,6 @@ GameObject:
   - component: {fileID: 20445211968642122}
   - component: {fileID: 81091530290703084}
   - component: {fileID: 114624264078120084}
-  - component: {fileID: 114708756994742368}
   - component: {fileID: 114534255071414010}
   m_Layer: 0
   m_Name: Main Camera
@@ -1053,7 +1051,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1213153183414672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4505001023132808}
@@ -1549,18 +1547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed250ad0cae319e47b010e4300aa869a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114525593027296040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1213153183414672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc818a1c5b43880448b73cd5be67c817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasBall: 0
 --- !u!114 &114534255071414010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1572,7 +1558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa605ead9a26ba74b961ff9ee6dfee82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 5
+  rotateSpeed: 80
   minimumX: -90
   maximumX: 90
 --- !u!114 &114614670255653334
@@ -1586,8 +1572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a68f573cea2a847a3971b2eb367b05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  mouseSensitivity: 6
+  speed: 3.5
+  mouseSensitivity: 80
   height: 0
   sprintSpeed: 0
   pushPower: 2
@@ -1606,20 +1592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactDistance: 5
---- !u!114 &114708756994742368
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1525417017658456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa605ead9a26ba74b961ff9ee6dfee82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 0
-  minimumX: -90
-  maximumX: 90
 --- !u!114 &114744722823117478
 MonoBehaviour:
   m_ObjectHideFlags: 1
