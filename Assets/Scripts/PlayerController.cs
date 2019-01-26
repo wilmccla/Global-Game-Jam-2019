@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public float mouseSensitivity;
     public float height;
     public float sprintSpeed;
-    public bool ifCrouched;
 
     //pushing object variable
     public float pushPower = 2.0f;
@@ -42,18 +41,22 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Keypad1)){
             Respawn();
         }
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-        if (moveHorizontal != 0)
+        Vector3 hMovement = Vector3.zero;
+        Vector3 vMovement = Vector3.zero;
+        if (horizontalInput != 0)
         {
-            rb.MovePosition(transform.position + transform.right * moveHorizontal * speed * Time.deltaTime);
+            hMovement = transform.right * horizontalInput * speed * Time.deltaTime;
         }
 
-        if (moveVertical != 0)
+        if (verticalInput != 0)
         {
-            rb.MovePosition(transform.position + transform.forward * moveVertical * speed * Time.deltaTime);
+            vMovement = transform.forward * verticalInput * speed * Time.deltaTime;
         }
+
+        rb.MovePosition(transform.position + hMovement + vMovement);
 
         float mouseInput = Input.GetAxis("Mouse X");
         Vector3 lookhere = new Vector3(0, mouseInput, 0);

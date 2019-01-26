@@ -3,7 +3,11 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour
 {
-    public float speed;
+    public float rotateSpeed = 5f;
+
+ public float minimumX = -90F;
+ public float maximumX = 90F;
+ float rotationX = 0f;
 
     void Start()
     {
@@ -12,8 +16,9 @@ public class CameraController : MonoBehaviour
     }
     void Update()
     {
-        float mouseInput = Input.GetAxis("Mouse Y");
-        Vector3 lookhere = new Vector3(mouseInput * speed * -1, 0, 0);
-        transform.Rotate(lookhere);
+        rotationX += Input.GetAxis ("Mouse Y") * rotateSpeed * -1;
+        rotationX = Mathf.Clamp (rotationX, minimumX, maximumX);
+
+        transform.localEulerAngles = new Vector3 (rotationX, transform.localEulerAngles.y, 0);
     }
 }
