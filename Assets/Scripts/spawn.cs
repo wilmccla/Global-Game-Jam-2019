@@ -8,28 +8,32 @@ public class spawn : MonoBehaviour
     private int maxWait = 6;
     private bool isSpawning;
     public GameObject Pickup;
+    private int seconds; 
 
     // Use this for initialization
     void Start ()
     {
         isSpawning = false;
-
+   
+        InvokeRepeating("SpawnObject", 1, 1);
 
     }
 
 	// Update is called once per frame
 	void Update () {
-	    if (!isSpawning)
-	    {
-	        float timer = Random.Range(minWait, maxWait);
-            Invoke("SpawnObject", timer);
-	        isSpawning = true;
-	    }
+	    
 	}
 
     void SpawnObject()
     {
-        GameObject truck = (GameObject)Instantiate(Pickup, transform.position, transform.rotation);
-        isSpawning = false;
+        seconds++;
+        int number = Random.Range(minWait, maxWait);
+        if (seconds >= number)
+        {
+            GameObject truck = (GameObject)Instantiate(Pickup, transform.position, transform.rotation);
+            seconds = 0;
+        }
+       
+        
     }
 }

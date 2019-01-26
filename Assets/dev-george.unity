@@ -428,10 +428,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1273404303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8dc02369ebd0e34d836fa6635e7a790, type: 3}
+  m_Script: {fileID: 11500000, guid: 2230ed5b2d684f847b6d39e10e071c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Your looking at me
+  interactText: gjghj
 --- !u!65 &1273404305
 BoxCollider:
   m_ObjectHideFlags: 0
