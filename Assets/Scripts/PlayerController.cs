@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed;
+    public float speed = 6;
     private Rigidbody rb;
     public float mouseSensitivity;
     public float height;
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
         rb.MovePosition(transform.position + hMovement + vMovement);
 
-        float mouseInput = Input.GetAxis("Mouse X");
+        float mouseInput = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
         Vector3 lookhere = new Vector3(0, mouseInput, 0);
         transform.Rotate(lookhere);
 
