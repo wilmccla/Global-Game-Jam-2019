@@ -26,7 +26,7 @@ public class Interactor : MonoBehaviour {
 
             if (interHit != null){
                 InteractTextUI.instance.SetText(interHit.HoverText());
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetButtonDown("Interact"))
                 {
                     interHit.Interact(this.transform.parent.gameObject);
 					

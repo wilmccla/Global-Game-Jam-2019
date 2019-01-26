@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     
 
+    public GameObject spawnPoint;
+
     // Use this for initialization
     void Start()
     {
@@ -37,6 +39,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Keypad1)){
+            Respawn();
+        }
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -99,4 +104,14 @@ public class PlayerController : MonoBehaviour
 
         body.velocity = pushDir * pushPower;
     }
+
+    public void Respawn(){
+        transform.position = spawnPoint.transform.position;
+        transform.rotation = spawnPoint.transform.rotation;
+    }
+    public void SetSpawn(GameObject point){
+        spawnPoint = point;
+    }
+
+
 }
