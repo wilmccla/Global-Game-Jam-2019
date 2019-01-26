@@ -1,19 +1,31 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float speed;
+    public float speedHorizontal = 2f;
+    public float speedVertical = 2f;
 
-    void Start()
-    {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+    private float yaw = 0f;
+    private float pitch = 0f;
+
+	// Use this for initialization
+	void Start () {
+
+	    Cursor.visible = false;
+	    Cursor.lockState = CursorLockMode.Locked;
+
     }
-    void Update()
-    {
-        float mouseInput = Input.GetAxis("Mouse Y");
-        Vector3 lookhere = new Vector3(mouseInput * speed * -1, 0, 0);
-        transform.Rotate(lookhere);
-    }
+	
+	// Update is called once per frame
+	void Update ()
+	{
+
+	    yaw += speedHorizontal * Input.GetAxis("Mouse X");
+	    pitch -= speedVertical * Input.GetAxis("Mouse Y");
+
+        transform.eulerAngles = new Vector3(pitch, yaw, 0f);
+
+	}
 }
