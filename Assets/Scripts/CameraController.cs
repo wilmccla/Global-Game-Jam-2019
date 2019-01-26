@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿
 using UnityEngine;
+=======
+﻿using UnityEngine;
+>>>>>>> 78d30d513ca0d3092c7b6f4a813225b6f0466a99
 using System.Collections;
 
 public class CameraController : MonoBehaviour

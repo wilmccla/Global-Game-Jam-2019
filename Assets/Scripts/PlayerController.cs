@@ -1,26 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
 
     public float speed;
-    private Rigidbody rb;
-    public float mouseSensitivity;
-    public float height;
-    public float sprintSpeed;
-    public bool ifCrouched;
 
-    // Use this for initialization
+    private Rigidbody rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        height = transform.position.y;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -29,6 +22,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.MovePosition(transform.position + transform.right * moveHorizontal * speed * Time.deltaTime);
         }
+<<<<<<< HEAD
 
         if (moveVertical != 0)
         {
@@ -39,6 +33,18 @@ public class PlayerController : MonoBehaviour
         Vector3 lookhere = new Vector3(0, mouseInput, 0);
         transform.Rotate(lookhere);
 
+=======
+
+        if (moveVertical != 0)
+        {
+            rb.MovePosition(transform.position + transform.forward * moveVertical * speed * Time.deltaTime);
+        }
+
+        float mouseInput = Input.GetAxis("Mouse X");
+        Vector3 lookhere = new Vector3(0, mouseInput, 0);
+        transform.Rotate(lookhere);
+
+>>>>>>> 78d30d513ca0d3092c7b6f4a813225b6f0466a99
         //rb.AddForce(movement * speed);
 
         /*Crouch
