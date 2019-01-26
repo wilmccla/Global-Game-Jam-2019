@@ -19,13 +19,16 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     public float jumpHeight = 7f;
 
-    
+    private bool isRunning = false;
+
+    Animator anim;
 
     public GameObject spawnPoint;
 
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         height = transform.position.y;
     }
@@ -55,7 +58,9 @@ public class PlayerController : MonoBehaviour
         {
             vMovement = transform.forward * verticalInput * speed * Time.deltaTime;
         }
-
+        //Running Animation
+        anim.SetBool("running",(verticalInput > 0));
+        //Movement
         rb.MovePosition(transform.position + hMovement + vMovement);
 
         float mouseInput = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
