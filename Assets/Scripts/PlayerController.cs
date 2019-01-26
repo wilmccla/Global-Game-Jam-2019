@@ -1,19 +1,26 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
 
     public float speed;
-
     private Rigidbody rb;
+    public float mouseSensitivity;
+    public float height;
+    public float sprintSpeed;
+    public bool ifCrouched;
 
+    // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        height = transform.position.y;
     }
 
-    void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
