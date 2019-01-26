@@ -18,8 +18,27 @@ public class PlayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal * speed, 0.0f, moveVertical * speed);
-        rb.MovePosition(transform.position + movement * Time.deltaTime);
+        if (moveHorizontal != 0)
+        {
+            rb.MovePosition(transform.position + transform.right * moveHorizontal * speed * Time.deltaTime);
+        }
 
+        if (moveVertical != 0)
+        {
+            rb.MovePosition(transform.position + transform.forward * moveVertical * speed * Time.deltaTime);
+        }
+
+        float mouseInput = Input.GetAxis("Mouse X");
+        Vector3 lookhere = new Vector3(0, mouseInput, 0);
+        transform.Rotate(lookhere);
+
+        //rb.AddForce(movement * speed);
+
+        /*Crouch
+        ifCrouched = (Input.GetKeyDown(KeyCode.LeftControl));
+
+        height = height - 1;
+        transform.position = new Vector3(transform.position.x, height, transform.position.z);
+        */
     }
 }
