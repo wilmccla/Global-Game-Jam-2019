@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/houseScene.unity
     guid: b09c9c069c060e44ca2cfba8bc2941f2
-  - enabled: 0
-    path: Assets/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Pound.unity
-    guid: 154589641b162314c97e3be814865848
   - enabled: 1
     path: Assets/Scenes/New Pound.unity
     guid: af229c717e5e7fa44b48a803939c624a
