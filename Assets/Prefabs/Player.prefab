@@ -1067,7 +1067,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1213153183414672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.581345, y: -0.055385396, z: -8.462755}
+  m_LocalPosition: {x: -5.764551, y: 3.6886525, z: 0.31194246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4497541957265494}
@@ -1626,7 +1626,8 @@ MonoBehaviour:
   sprintSpeed: 0
   pushPower: 2
   isGrounded: 0
-  jumpHeight: 7
+  jumpForce: 3
+  jump: {x: 0, y: 0, z: 0}
   spawnPoint: {fileID: 0}
 --- !u!114 &114624264078120084
 MonoBehaviour:
