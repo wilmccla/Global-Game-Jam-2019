@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     public float mouseSensitivity;
     public float height;
-    public float sprintSpeed;
+    public float sprintSpeed = 10;
 
     public float resetSpeed;
     //pushing object variable
