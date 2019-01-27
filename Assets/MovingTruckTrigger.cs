@@ -3,32 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class TruckTrigger : MonoBehaviour
+public class MovingTruckTrigger : MonoBehaviour
 {
-    
+
 
 
     // Use this for initialization
-    void Start () {
-	   
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	    
-	}
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("The Truck Entered");
         if (other.gameObject.tag == "truck")
         {
-           Debug.Log("The Truck not destroyed");
-           Destroy(other.gameObject);
+            Debug.Log("The Truck not destroyed");
+            Destroy(other.gameObject);
         }
     }
-    void OnTriggerExit (Collider other)
+    void OnTriggerExit(Collider other)
     {
         Debug.Log("The truck exited");
         if (other.gameObject.tag == "truck")
