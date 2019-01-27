@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EatBone : MonoBehaviour
+public class EatBone : InteractObject
 {
-    public float boneCount;
-    public class Ball : InteractObject
+
+    public override void Interact(GameObject player)
     {
-        if (GameObject.)
+        player.GetComponent<PlayerStuff>().boneCount++;
+        Destroy(this.gameObject);
     }
 }

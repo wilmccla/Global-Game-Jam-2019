@@ -6,7 +6,7 @@ public class Bone : InteractObject
 {
     public override void Interact(GameObject player)
     {
-        Debug.Log("I has bone");
+        //Debug.Log(boneCount);
         Destroy(this.gameObject);
     }
 }
