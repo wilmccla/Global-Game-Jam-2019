@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Boo.Lang;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -155,6 +156,14 @@ public class PlayerController : MonoBehaviour
     {
         canMove = true;
         Camera.main.gameObject.GetComponent<CameraController>().enabled = false;
+    }
+
+    public void GetCaught(){
+        Invoke("invokeCaught",5);
+    }
+
+    void invokeCaught(){
+        SceneManager.LoadScene("Pound");
     }
 
 
