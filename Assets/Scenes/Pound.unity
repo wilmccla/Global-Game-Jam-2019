@@ -328,6 +328,11 @@ Prefab:
       propertyPath: m_Name
       value: Master Bone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23657703128835682, guid: fa554d68198d0b7419fc93b26614d899,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa554d68198d0b7419fc93b26614d899, type: 2}
   m_IsPrefabAsset: 0
@@ -3907,6 +3912,11 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23657703128835682, guid: fa554d68198d0b7419fc93b26614d899,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 64059061127195014, guid: fa554d68198d0b7419fc93b26614d899, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fa554d68198d0b7419fc93b26614d899, type: 2}
@@ -7418,6 +7428,11 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23657703128835682, guid: fa554d68198d0b7419fc93b26614d899,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 64059061127195014, guid: fa554d68198d0b7419fc93b26614d899, type: 2}
@@ -20128,6 +20143,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 224836541610291310, guid: ecfcd8c5a3cd8484fbeb2be2c5a5b7cb,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecfcd8c5a3cd8484fbeb2be2c5a5b7cb, type: 2}
   m_IsPrefabAsset: 0
@@ -23257,6 +23277,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 23657703128835682, guid: fa554d68198d0b7419fc93b26614d899,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa554d68198d0b7419fc93b26614d899, type: 2}
   m_IsPrefabAsset: 0
@@ -25420,6 +25445,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 23677871327451718, guid: b3fa293ec61641245abfe0df3bd1e358,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23840751441323404, guid: b3fa293ec61641245abfe0df3bd1e358,
+        type: 2}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3fa293ec61641245abfe0df3bd1e358, type: 2}
   m_IsPrefabAsset: 0
@@ -26508,7 +26543,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 0.1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
