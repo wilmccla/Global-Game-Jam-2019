@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bone : InteractObject
+public class EatBone : InteractObject
 {
+
     public override void Interact(GameObject player)
     {
-        //Debug.Log(boneCount);
+        player.GetComponent<PlayerStuff>().boneCount++;
         Destroy(this.gameObject);
     }
 }

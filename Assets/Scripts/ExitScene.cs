@@ -23,6 +23,7 @@ public class ExitScene : MonoBehaviour
         if (col.gameObject.name == "Player")
         {
             SceneManager.LoadScene("City");
+            Debug.Log("I have bones.");
         }
     }
 }
