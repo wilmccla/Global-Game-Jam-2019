@@ -229,6 +229,11 @@ Prefab:
       propertyPath: speed
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 95924802611633986, guid: a395b776300b32e45a3b1e292c8ad3e1,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d4c0e0d28a6ef2441ab294b3eef098bc, type: 2}
     m_RemovedComponents:
     - {fileID: 114708756994742368, guid: a395b776300b32e45a3b1e292c8ad3e1, type: 2}
     - {fileID: 114525593027296040, guid: a395b776300b32e45a3b1e292c8ad3e1, type: 2}
