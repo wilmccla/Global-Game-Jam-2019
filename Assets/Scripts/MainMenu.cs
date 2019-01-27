@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour {
 	void Update () {
 	    if (Input.anyKey)
 	    {
-	        SceneManager.LoadScene("New Pound");
+	        SceneManager.LoadScene("houseScene");
 	    }
 	}
 }

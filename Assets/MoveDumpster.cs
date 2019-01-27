@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class MainMenu : MonoBehaviour {
+
+public class MoveDumpster : InteractObject {
 
 	// Use this for initialization
 	void Start () {
@@ -11,10 +11,11 @@ public class MainMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.anyKey)
-	    {
-
-	        SceneManager.LoadScene("New Pound");
-	    }
+		
 	}
+
+    public override void Interact(GameObject player)
+    {
+        GetComponent<Animator>().SetTrigger("push");
+    }
 }
