@@ -9,6 +9,8 @@ public class CameraController : MonoBehaviour
  public float maximumX = 90F;
  float rotationX = 0f;
 
+
+
     void Start()
     {
         Cursor.visible = false;

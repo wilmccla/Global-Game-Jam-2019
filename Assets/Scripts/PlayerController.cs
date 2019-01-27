@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject spawnPoint;
 
+    public bool canMove = true;
+
     // Use this for initialization
     void Start()
     {
@@ -56,6 +58,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Keypad1)){
             Respawn();
         }
@@ -73,10 +76,12 @@ public class PlayerController : MonoBehaviour
         {
             vMovement = transform.forward * verticalInput * speed * Time.deltaTime;
         }
+        if (canMove){
         //Running Animation
         anim.SetBool("running",(verticalInput > 0));
         //Movement
         rb.MovePosition(transform.position + hMovement + vMovement);
+        }
 
         float mouseInput = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
         Vector3 lookhere = new Vector3(0, mouseInput, 0);
@@ -129,6 +134,11 @@ public class PlayerController : MonoBehaviour
     }
     public void SetSpawn(GameObject point){
         spawnPoint = point;
+    }
+
+    public void Pause(){
+        canMove = true;
+        Camera.main.gameObject.GetComponent<CameraController>().enabled = false;
     }
 
 
