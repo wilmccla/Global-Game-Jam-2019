@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
 
     // Jumping Variables
     public bool isGrounded;
-    public float jumpHeight = 7f;
+    public float jumpForce = 3f;
+    public Vector3 jump;
 
     private bool isRunning = false;
 
@@ -31,11 +32,25 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         height = transform.position.y;
+        jump = new Vector3(0f, 2f, 0f);
     }
 
-    void OnCollisionStay()
+    void OnCollisionEnter(Collision other)
     {
-        isGrounded = true;
+        if (other.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+
+        Debug.Log(other.gameObject.tag);
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            isGrounded = false;
+        }
     }
 
     // Update is called once per frame
@@ -68,10 +83,9 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(lookhere);
 
         //Jumping controller
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
-            rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
-            isGrounded = false;
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
         }
 
         //rb.AddForce(movement * speed);
@@ -82,10 +96,6 @@ public class PlayerController : MonoBehaviour
         height = height - 1;
         transform.position = new Vector3(transform.position.x, height, transform.position.z);
         */
-
-
-
-
     }
 
     void FixedUpdate()
