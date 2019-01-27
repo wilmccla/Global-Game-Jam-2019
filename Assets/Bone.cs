@@ -2,20 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bone : InteractObject {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+public class Bone : InteractObject
+{
+    private int _bones;
     public override void Interact(GameObject player)
     {
-        
+        _bones++;
+        Debug.Log(_bones);
+        Destroy(this.gameObject);
     }
 }

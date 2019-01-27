@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float height;
     public float sprintSpeed;
 
+    public float resetSpeed;
     //pushing object variable
     public float pushPower = 2.0f;
 
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         height = transform.position.y;
         jump = new Vector3(0f, 2f, 0f);
+        resetSpeed = speed;
     }
 
     void OnCollisionEnter(Collision other)
@@ -59,7 +61,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Keypad1)){
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
             Respawn();
         }
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -76,11 +79,12 @@ public class PlayerController : MonoBehaviour
         {
             vMovement = transform.forward * verticalInput * speed * Time.deltaTime;
         }
-        if (canMove){
-        //Running Animation
-        anim.SetBool("running",(verticalInput > 0));
-        //Movement
-        rb.MovePosition(transform.position + hMovement + vMovement);
+        if (canMove)
+        {
+            //Running Animation
+            anim.SetBool("running", (verticalInput > 0));
+            //Movement
+            rb.MovePosition(transform.position + hMovement + vMovement);
         }
 
         float mouseInput = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
@@ -97,16 +101,25 @@ public class PlayerController : MonoBehaviour
 
         /*Crouch
         ifCrouched = (Input.GetKeyDown(KeyCode.LeftControl));
-
+ 
         height = height - 1;
         transform.position = new Vector3(transform.position.x, height, transform.position.z);
         */
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = sprintSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = resetSpeed;
+        }
     }
 
     void FixedUpdate()
     //For Jumping
     {
-      
+
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
@@ -123,20 +136,23 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        Vector3 pushDir =  new Vector3 (hit.moveDirection.x, 0, hit.moveDirection.z);
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
 
         body.velocity = pushDir * pushPower;
     }
 
-    public void Respawn(){
+    public void Respawn()
+    {
         transform.position = spawnPoint.transform.position;
         transform.rotation = spawnPoint.transform.rotation;
     }
-    public void SetSpawn(GameObject point){
+    public void SetSpawn(GameObject point)
+    {
         spawnPoint = point;
     }
 
-    public void Pause(){
+    public void Pause()
+    {
         canMove = true;
         Camera.main.gameObject.GetComponent<CameraController>().enabled = false;
     }
