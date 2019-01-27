@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 72bf3b4d06aec224586d6e559b74b7c0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrier
+    100002: Box
+    100004: //RootNode
+    100006: Crate
+    100008: Cube
+    100010: Cube.001
+    100012: Cube.002
+    100014: Cube.003
+    100016: Cube.004
+    100018: Cube.005
+    100020: Cube.006
+    100022: Cube.007
+    100024: Cube.008
+    100026: Cube.009
+    100028: Cube.010
+    100030: Cube.011
+    100032: Cube.012
+    100034: Cube.013
+    100036: Cube.014
+    100038: Dumpster
+    100040: Dumpster.001
+    100042: Foundation
+    100044: Foundation.001
+    100046: Foundation.002
+    100048: Foundation.003
+    100050: Light Post
+    100052: MovingCrate1
+    100054: MovingCrate2
+    100056: Pickup
+    100058: Plane
+    100060: Pound
+    100062: Sun
+    400000: Barrier
+    400002: Box
+    400004: //RootNode
+    400006: Crate
+    400008: Cube
+    400010: Cube.001
+    400012: Cube.002
+    400014: Cube.003
+    400016: Cube.004
+    400018: Cube.005
+    400020: Cube.006
+    400022: Cube.007
+    400024: Cube.008
+    400026: Cube.009
+    400028: Cube.010
+    400030: Cube.011
+    400032: Cube.012
+    400034: Cube.013
+    400036: Cube.014
+    400038: Dumpster
+    400040: Dumpster.001
+    400042: Foundation
+    400044: Foundation.001
+    400046: Foundation.002
+    400048: Foundation.003
+    400050: Light Post
+    400052: MovingCrate1
+    400054: MovingCrate2
+    400056: Pickup
+    400058: Plane
+    400060: Pound
+    400062: Sun
+    2100000: Material.003
+    2100002: Dumpster
+    2100004: No Name
+    2100006: Material.002
+    2100008: Material.001
+    2300000: Barrier
+    2300002: Box
+    2300004: Crate
+    2300006: Cube
+    2300008: Cube.001
+    2300010: Cube.002
+    2300012: Cube.003
+    2300014: Cube.004
+    2300016: Cube.005
+    2300018: Cube.006
+    2300020: Cube.007
+    2300022: Cube.008
+    2300024: Cube.009
+    2300026: Cube.010
+    2300028: Cube.011
+    2300030: Cube.012
+    2300032: Cube.013
+    2300034: Cube.014
+    2300036: Dumpster
+    2300038: Dumpster.001
+    2300040: Foundation
+    2300042: Foundation.001
+    2300044: Foundation.002
+    2300046: Foundation.003
+    2300048: Light Post
+    2300050: MovingCrate1
+    2300052: MovingCrate2
+    2300054: Pickup
+    2300056: Plane
+    2300058: Pound
+    3300000: Barrier
+    3300002: Box
+    3300004: Crate
+    3300006: Cube
+    3300008: Cube.001
+    3300010: Cube.002
+    3300012: Cube.003
+    3300014: Cube.004
+    3300016: Cube.005
+    3300018: Cube.006
+    3300020: Cube.007
+    3300022: Cube.008
+    3300024: Cube.009
+    3300026: Cube.010
+    3300028: Cube.011
+    3300030: Cube.012
+    3300032: Cube.013
+    3300034: Cube.014
+    3300036: Dumpster
+    3300038: Dumpster.001
+    3300040: Foundation
+    3300042: Foundation.001
+    3300044: Foundation.002
+    3300046: Foundation.003
+    3300048: Light Post
+    3300050: MovingCrate1
+    3300052: MovingCrate2
+    3300054: Pickup
+    3300056: Plane
+    3300058: Pound
+    4300000: Dumpster.001
+    4300002: Box
+    4300004: Cube.012
+    4300006: Pickup
+    4300008: Cube.011
+    4300010: Dumpster
+    4300012: Cube.010
+    4300014: Cube.009
+    4300016: Barrier
+    4300018: Light Post
+    4300020: MovingCrate2
+    4300022: MovingCrate1
+    4300024: Cube.014
+    4300026: Crate
+    4300028: Cube.013
+    4300030: Cube.006
+    4300032: Foundation.003
+    4300034: Cube.005
+    4300036: Cube.004
+    4300038: Foundation.002
+    4300040: Foundation.001
+    4300042: Cube.008
+    4300044: Plane
+    4300046: Cube.007
+    4300048: Cube.003
+    4300050: Cube.002
+    4300052: Cube.001
+    4300054: Pound
+    4300056: Cube
+    4300058: Foundation
+    6400000: Barrier
+    6400002: Box
+    6400004: Crate
+    6400006: Cube
+    6400008: Cube.001
+    6400010: Cube.002
+    6400012: Cube.003
+    6400014: Cube.004
+    6400016: Cube.005
+    6400018: Cube.006
+    6400020: Cube.007
+    6400022: Cube.008
+    6400024: Cube.009
+    6400026: Cube.010
+    6400028: Cube.011
+    6400030: Cube.012
+    6400032: Cube.013
+    6400034: Cube.014
+    6400036: Dumpster
+    6400038: Dumpster.001
+    6400040: Foundation
+    6400042: Foundation.001
+    6400044: Foundation.002
+    6400046: Foundation.003
+    6400048: Light Post
+    6400050: MovingCrate1
+    6400052: MovingCrate2
+    6400054: Pickup
+    6400056: Plane
+    6400058: Pound
+    10800000: Sun
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
