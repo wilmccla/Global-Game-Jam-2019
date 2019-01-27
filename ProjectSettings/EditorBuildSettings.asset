@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pound.unity
     guid: 154589641b162314c97e3be814865848
   - enabled: 1
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 45d3cc89227dcf1458c5dbd1c085e316
+  - enabled: 1
+    path: Assets/Scenes/New Pound.unity
+    guid: af229c717e5e7fa44b48a803939c624a
   m_configObjects: {}
