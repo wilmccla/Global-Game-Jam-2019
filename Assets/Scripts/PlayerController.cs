@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void invokeCaught(){
-        SceneManager.LoadScene("Pound");
+        SceneManager.LoadScene("New Pound");
     }
 
 
