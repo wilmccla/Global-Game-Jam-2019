@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     }
     void Update()
     {
-        rotationX += Input.GetAxis ("Mouse Y") * rotateSpeed * -1;
+        rotationX += Input.GetAxis ("Mouse Y") * rotateSpeed * -1 * Time.deltaTime;
         rotationX = Mathf.Clamp (rotationX, minimumX, maximumX);
 
         transform.localEulerAngles = new Vector3 (rotationX, transform.localEulerAngles.y, 0);

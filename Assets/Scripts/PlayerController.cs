@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed;
+    public float speed = 6;
     private Rigidbody rb;
     public float mouseSensitivity;
     public float height;
@@ -17,22 +17,40 @@ public class PlayerController : MonoBehaviour
 
     // Jumping Variables
     public bool isGrounded;
-    public float jumpHeight = 7f;
+    public float jumpForce = 3f;
+    public Vector3 jump;
 
-    
+    private bool isRunning = false;
+
+    Animator anim;
 
     public GameObject spawnPoint;
 
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         height = transform.position.y;
+        jump = new Vector3(0f, 2f, 0f);
     }
 
-    void OnCollisionStay()
+    void OnCollisionEnter(Collision other)
     {
-        isGrounded = true;
+        if (other.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+
+        Debug.Log(other.gameObject.tag);
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            isGrounded = false;
+        }
     }
 
     // Update is called once per frame
@@ -55,18 +73,19 @@ public class PlayerController : MonoBehaviour
         {
             vMovement = transform.forward * verticalInput * speed * Time.deltaTime;
         }
-
+        //Running Animation
+        anim.SetBool("running",(verticalInput > 0));
+        //Movement
         rb.MovePosition(transform.position + hMovement + vMovement);
 
-        float mouseInput = Input.GetAxis("Mouse X");
+        float mouseInput = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
         Vector3 lookhere = new Vector3(0, mouseInput, 0);
         transform.Rotate(lookhere);
 
         //Jumping controller
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
-            rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
-            isGrounded = false;
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
         }
 
         //rb.AddForce(movement * speed);
@@ -77,10 +96,6 @@ public class PlayerController : MonoBehaviour
         height = height - 1;
         transform.position = new Vector3(transform.position.x, height, transform.position.z);
         */
-
-
-
-
     }
 
     void FixedUpdate()
