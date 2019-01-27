@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStuff : MonoBehaviour {
 
 public static PlayerStuff instance;
+    public int boneCount = 0;
 
 	public bool hasBall;
 	// Use this for initialization
