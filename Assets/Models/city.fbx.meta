@@ -3,97 +3,164 @@ guid: 56c6d4bad9a95bc41a06051487e91b21
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Cube
-    100004: Cube.001
-    100006: Cube.002
-    100008: Cube.003
-    100010: Cube.004
-    100012: Cube.005
-    100014: Cube.006
-    100016: Cube.007
-    100018: Cube.008
-    100020: Cube.009
-    100022: Cube.010
-    100024: Cube.011
-    100026: Cube.012
-    100028: Foundation
-    100030: Foundation.001
-    100032: Plane
-    100034: Pound
-    400000: //RootNode
-    400002: Cube
-    400004: Cube.001
-    400006: Cube.002
-    400008: Cube.003
-    400010: Cube.004
-    400012: Cube.005
-    400014: Cube.006
-    400016: Cube.007
-    400018: Cube.008
-    400020: Cube.009
-    400022: Cube.010
-    400024: Cube.011
-    400026: Cube.012
-    400028: Foundation
-    400030: Foundation.001
-    400032: Plane
-    400034: Pound
-    2100000: Material.001
-    2100002: No Name
-    2100004: Material.002
-    2300000: Cube
-    2300002: Cube.001
-    2300004: Cube.002
-    2300006: Cube.003
-    2300008: Cube.004
-    2300010: Cube.005
-    2300012: Cube.006
-    2300014: Cube.007
-    2300016: Cube.008
-    2300018: Cube.009
-    2300020: Cube.010
-    2300022: Cube.011
-    2300024: Cube.012
-    2300026: Foundation
-    2300028: Foundation.001
-    2300030: Plane
-    2300032: Pound
-    3300000: Cube
-    3300002: Cube.001
-    3300004: Cube.002
-    3300006: Cube.003
-    3300008: Cube.004
-    3300010: Cube.005
-    3300012: Cube.006
-    3300014: Cube.007
-    3300016: Cube.008
-    3300018: Cube.009
-    3300020: Cube.010
-    3300022: Cube.011
-    3300024: Cube.012
-    3300026: Foundation
-    3300028: Foundation.001
-    3300030: Plane
-    3300032: Pound
-    4300000: Foundation.001
-    4300002: Cube.012
-    4300004: Cube.011
-    4300006: Cube.010
-    4300008: Cube.009
-    4300010: Cube.008
-    4300012: Plane
-    4300014: Cube.007
-    4300016: Cube.006
-    4300018: Cube.005
-    4300020: Cube.004
-    4300022: Cube.003
-    4300024: Cube.002
-    4300026: Cube.001
-    4300028: Pound
-    4300030: Cube
-    4300032: Foundation
-    2186277476908879412: ImportLogs
+    100000: AllyFence1
+    100002: AllyFenceHole
+    100004: Bench
+    100006: Box
+    100008: BuildingA
+    100010: BuildingA.002
+    100012: BuildingB
+    100014: BuildingC
+    100016: BuildingE
+    100018: BuildingF
+    100020: BuildingF.001
+    100022: BuildingG
+    100024: //RootNode
+    100026: CratewithRamp
+    100028: DogCatcherVan
+    100030: DogPark
+    100032: DogParkFence
+    100034: Dumpster
+    100036: Fences
+    100038: Foundation
+    100040: Light Post
+    100042: MovingVan
+    100044: Plank
+    100046: PlayerHouse
+    100048: Pound
+    100050: Roads
+    100052: Sun
+    100054: TrashCan
+    400000: AllyFence1
+    400002: AllyFenceHole
+    400004: Bench
+    400006: Box
+    400008: BuildingA
+    400010: BuildingA.002
+    400012: BuildingB
+    400014: BuildingC
+    400016: BuildingE
+    400018: BuildingF
+    400020: BuildingF.001
+    400022: BuildingG
+    400024: //RootNode
+    400026: CratewithRamp
+    400028: DogCatcherVan
+    400030: DogPark
+    400032: DogParkFence
+    400034: Dumpster
+    400036: Fences
+    400038: Foundation
+    400040: Light Post
+    400042: MovingVan
+    400044: Plank
+    400046: PlayerHouse
+    400048: Pound
+    400050: Roads
+    400052: Sun
+    400054: TrashCan
+    2100000: No Name
+    2100002: _Brick_
+    2100004: Chimnney
+    2100006: Door
+    2100008: WindowTrim
+    2100010: Sign
+    2100012: AC
+    2100014: Window
+    2100016: DogCatcher1
+    2100018: DogCatcher2
+    2100020: Headlight
+    2100022: Tire
+    2100024: Grass
+    2100026: Material.004
+    2100028: Material.001
+    2100030: Fence
+    2100032: Material.003
+    2100034: Dumpster
+    2100036: Material.005
+    2100038: Roof
+    2100040: Stairs
+    2100042: Material.002
+    2100044: Material.007
+    2300000: AllyFence1
+    2300002: AllyFenceHole
+    2300004: Bench
+    2300006: Box
+    2300008: BuildingA
+    2300010: BuildingA.002
+    2300012: BuildingB
+    2300014: BuildingC
+    2300016: BuildingE
+    2300018: BuildingF
+    2300020: BuildingF.001
+    2300022: BuildingG
+    2300024: CratewithRamp
+    2300026: DogCatcherVan
+    2300028: DogPark
+    2300030: DogParkFence
+    2300032: Dumpster
+    2300034: Fences
+    2300036: Foundation
+    2300038: Light Post
+    2300040: MovingVan
+    2300042: Plank
+    2300044: PlayerHouse
+    2300046: Pound
+    2300048: Roads
+    2300050: TrashCan
+    3300000: AllyFence1
+    3300002: AllyFenceHole
+    3300004: Bench
+    3300006: Box
+    3300008: BuildingA
+    3300010: BuildingA.002
+    3300012: BuildingB
+    3300014: BuildingC
+    3300016: BuildingE
+    3300018: BuildingF
+    3300020: BuildingF.001
+    3300022: BuildingG
+    3300024: CratewithRamp
+    3300026: DogCatcherVan
+    3300028: DogPark
+    3300030: DogParkFence
+    3300032: Dumpster
+    3300034: Fences
+    3300036: Foundation
+    3300038: Light Post
+    3300040: MovingVan
+    3300042: Plank
+    3300044: PlayerHouse
+    3300046: Pound
+    3300048: Roads
+    3300050: TrashCan
+    4300000: BuildingF.001
+    4300002: BuildingA.002
+    4300004: DogCatcherVan
+    4300006: TrashCan
+    4300008: Bench
+    4300010: DogPark
+    4300012: Roads
+    4300014: MovingVan
+    4300016: Plank
+    4300018: Fences
+    4300020: Box
+    4300022: BuildingC
+    4300024: Dumpster
+    4300026: BuildingG
+    4300028: BuildingA
+    4300030: Light Post
+    4300032: CratewithRamp
+    4300034: AllyFenceHole
+    4300036: PlayerHouse
+    4300038: DogParkFence
+    4300040: BuildingB
+    4300042: AllyFence1
+    4300044: BuildingF
+    4300046: Pound
+    4300048: BuildingE
+    4300050: Foundation
+    10800000: Sun
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -128,7 +195,6 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -153,9 +219,6 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -170,6 +233,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
