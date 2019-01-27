@@ -19,4 +19,14 @@ public class TruckMover : MonoBehaviour
 	void Update () {
 		
 	}
+
+    void OnCollisionEnter (Collision other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<PlayerController>().Respawn();
+            Destroy(this.gameObject);
+
+        }
+    }
 }

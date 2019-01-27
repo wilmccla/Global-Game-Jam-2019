@@ -160,6 +160,32 @@ ModelImporter:
     4300046: Pound
     4300048: BuildingE
     4300050: Foundation
+    6400000: AllyFence1
+    6400002: AllyFenceHole
+    6400004: Bench
+    6400006: Box
+    6400008: BuildingA
+    6400010: BuildingA.002
+    6400012: BuildingB
+    6400014: BuildingC
+    6400016: BuildingE
+    6400018: BuildingF
+    6400020: BuildingF.001
+    6400022: BuildingG
+    6400024: CratewithRamp
+    6400026: DogCatcherVan
+    6400028: DogPark
+    6400030: DogParkFence
+    6400032: Dumpster
+    6400034: Fences
+    6400036: Foundation
+    6400038: Light Post
+    6400040: MovingVan
+    6400042: Plank
+    6400044: PlayerHouse
+    6400046: Pound
+    6400048: Roads
+    6400050: TrashCan
     10800000: Sun
   externalObjects: {}
   materials:
@@ -194,7 +220,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
