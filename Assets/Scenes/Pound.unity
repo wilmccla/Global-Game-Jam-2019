@@ -1746,8 +1746,6 @@ GameObject:
   - component: {fileID: 121285285}
   - component: {fileID: 121285284}
   - component: {fileID: 121285283}
-  - component: {fileID: 121285282}
-  - component: {fileID: 121285281}
   m_Layer: 0
   m_Name: Drawer (5)
   m_TagString: Untagged
@@ -1769,36 +1767,6 @@ Transform:
   m_Father: {fileID: 19288814}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90.00001, y: -90, z: 0}
---- !u!114 &121285281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 121285279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f688961ddd3e64c82a57de1e3f5d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: Open
---- !u!95 &121285282
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 121285279}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30ad9a7f45698e14eb9a146a2cdc05cc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &121285283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3874,7 +3842,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a8e3a6a561c4bfb4b93b7979084bd621, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a8e3a6a561c4bfb4b93b7979084bd621, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4473,7 +4441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 321057383}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.745808, y: 6.862, z: 38.3678}
+  m_LocalPosition: {x: -14.6, y: 6.862, z: 38.37}
   m_LocalScale: {x: 19.882082, y: 5.4201226, z: 0.13115007}
   m_Children: []
   m_Father: {fileID: 150497247}
@@ -8329,7 +8297,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 674907635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52285385, y: 3.8312197, z: -5.808583}
+  m_LocalPosition: {x: 3.01, y: 3.8312197, z: -5.808583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71267120}
@@ -9765,7 +9733,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1375375, y: 0.67926544, z: 0.8501167}
-  m_Center: {x: -0.009807825, y: 0.26590773, z: -0.16591644}
+  m_Center: {x: 2.47, y: 0.26590773, z: -0.16591644}
 --- !u!1 &804497988
 GameObject:
   m_ObjectHideFlags: 0
@@ -11819,7 +11787,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4129407080671306, guid: 1424f9d3f4efba141a371178a666d181, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.883
+      value: -3.103
       objectReference: {fileID: 0}
     - target: {fileID: 4129407080671306, guid: 1424f9d3f4efba141a371178a666d181, type: 2}
       propertyPath: m_LocalPosition.y
@@ -14115,8 +14083,6 @@ GameObject:
   - component: {fileID: 1165208822}
   - component: {fileID: 1165208821}
   - component: {fileID: 1165208820}
-  - component: {fileID: 1165208819}
-  - component: {fileID: 1165208818}
   m_Layer: 0
   m_Name: Drawer (4)
   m_TagString: Untagged
@@ -14138,36 +14104,6 @@ Transform:
   m_Father: {fileID: 19288814}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90.00001, y: -90, z: 0}
---- !u!114 &1165208818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1165208816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f688961ddd3e64c82a57de1e3f5d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: Open
---- !u!95 &1165208819
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1165208816}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30ad9a7f45698e14eb9a146a2cdc05cc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1165208820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14580,8 +14516,6 @@ GameObject:
   - component: {fileID: 1200338531}
   - component: {fileID: 1200338530}
   - component: {fileID: 1200338529}
-  - component: {fileID: 1200338528}
-  - component: {fileID: 1200338527}
   m_Layer: 0
   m_Name: Drawer (3)
   m_TagString: Untagged
@@ -14603,36 +14537,6 @@ Transform:
   m_Father: {fileID: 19288814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: -90, z: 0}
---- !u!114 &1200338527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1200338525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f688961ddd3e64c82a57de1e3f5d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: Open
---- !u!95 &1200338528
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1200338525}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30ad9a7f45698e14eb9a146a2cdc05cc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1200338529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16636,7 +16540,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: a8e3a6a561c4bfb4b93b7979084bd621, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.35
+      value: 1.989
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a8e3a6a561c4bfb4b93b7979084bd621, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18347,8 +18251,6 @@ GameObject:
   - component: {fileID: 1541091910}
   - component: {fileID: 1541091909}
   - component: {fileID: 1541091908}
-  - component: {fileID: 1541091907}
-  - component: {fileID: 1541091906}
   m_Layer: 0
   m_Name: Drawer (6)
   m_TagString: Untagged
@@ -18370,36 +18272,6 @@ Transform:
   m_Father: {fileID: 19288814}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -89.99999, y: 0, z: -0.000015258789}
---- !u!114 &1541091906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1541091904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f688961ddd3e64c82a57de1e3f5d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: Open
---- !u!95 &1541091907
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1541091904}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30ad9a7f45698e14eb9a146a2cdc05cc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1541091908
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19272,11 +19144,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4376627120230686, guid: a395b776300b32e45a3b1e292c8ad3e1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.764551
+      value: -4.43
       objectReference: {fileID: 0}
     - target: {fileID: 4376627120230686, guid: a395b776300b32e45a3b1e292c8ad3e1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.6886525
+      value: 3.83
       objectReference: {fileID: 0}
     - target: {fileID: 4376627120230686, guid: a395b776300b32e45a3b1e292c8ad3e1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -20264,7 +20136,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1682039759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4706554, y: 4.6105127, z: 3.53}
+  m_LocalPosition: {x: 7.94, y: 4.6105127, z: 3.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106055504}
@@ -20989,8 +20861,6 @@ GameObject:
   - component: {fileID: 1723211672}
   - component: {fileID: 1723211671}
   - component: {fileID: 1723211670}
-  - component: {fileID: 1723211669}
-  - component: {fileID: 1723211668}
   m_Layer: 0
   m_Name: Drawer (7)
   m_TagString: Untagged
@@ -21012,36 +20882,6 @@ Transform:
   m_Father: {fileID: 19288814}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -89.99999, y: 0, z: -0.000015258789}
---- !u!114 &1723211668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1723211666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f688961ddd3e64c82a57de1e3f5d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: Open
---- !u!95 &1723211669
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1723211666}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30ad9a7f45698e14eb9a146a2cdc05cc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1723211670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24959,7 +24799,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2050881971}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.477, y: 0, z: 0}
   m_LocalScale: {x: 1.3307, y: 1.3307, z: 1.3307}
   m_Children: []
   m_Father: {fileID: 794254772}
